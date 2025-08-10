@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link. rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+" />
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .fp:hover {
+      color: red;
+      cursor: pointer;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 30px;
+    }
+
+    .faq-container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .faq-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .faq {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq-question:hover {
+      color: red;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .faq.active .faq-answer {
+      display: block;
+    }
+
+    .faq.active .faq-question {
+      color: #d9534f;
+      font-weight: bold;
+    }
+
+    * {
+      font-size: 12px;
+    }
+  </style>
+
+  <title>About Us 4</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <div class="container-fluid">
+    <div class="row align-items-center  d-flex" style="background-color:rgb(231, 231, 231); min-height: 5vh;">
+      <div class="col-md-6">
+        <div>
+          <span class=" text-white " style="background-color: rgb(254, 86, 33);;">This Weak </span>
+          <a href="#" class="text-decoration-none text-dark"> Sale special too good to miss in every gear</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 mt-2">
+        <div class="d-flex">
+          <div class="dropdown border-start border-end">
+            <a class="btn dropdown-toggle hov-he-red" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+              My Account
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-he-red" href="#"><i class="bi bi-person-fill"></i>Register</a>
+              </li>
+              <li><a class="dropdown-item hov-he-red" href="#"><i class="fa-solid fa-pen-to-square"></i>
+                  Login</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <a class="btn hov-he-red" href="#" aria-expanded="false">
+            <i class="bi bi-heart-fill"></i> Wish List (2)
+          </a>
+
+
+
+          <div class="dropdown border-start border-end">
+            <a class="btn dropdown-toggle hov-he-red" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="./images/gb.png" alt="">English
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-he-red" href="#"><img src="./images/gb.png" alt=""> English</a>
+              </li>
+              <li><a class="dropdown-item hov-he-red" href="#"><img src="./images/lb.png" alt=""> Arabic</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="dropdown border-start border-end">
+            <a class="btn dropdown-toggle hov-he-red" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              USD
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-he-red" href="#">(€) Euro </a></li>
+              <li><a class="dropdown-item hov-he-red" href="#">(£) Pounds</a></li>
+              <li><a class="dropdown-item hov-he-red" href="#">($) USD</a></li>
+
+
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row d-flex justify-content-center " style="background-color:rgb(246, 245, 245); min-height: 11vh;">
+      <div class="col-md-3 m-4">
+        <img src="./images/theme_logo.png" class="img-fluid" alt="">
+      </div>
+
+
+      <div class="col-md-6 mt-4">
+
+        <div class="navbar  navbar-expand-lg ">
+          <div class="container-fluid">
+
+            <button type="button" class="navbar-toggler" data-bs-togle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-5">
+                <li class="navbar-item mx-3 dropdown">
+                  <a href="./index.html" class="nav-link dropdown-toggle  text-uppercase bg-hov" role="button">home</a>
+                </li>
+                <li class="navbar-item mx-3 dropdown">
+                  <a href="#" class="nav-link dropdown-toggle  text-uppercase bg-hov" role="button"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside">features</a>
+                  <div class="container dropdown-menu " style="min-height: 40vh; min-width: 100vh;">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3">
+                        <div>
+                          <h6 class="border-bottom text-uppercase  ms-3"><a href="#"
+                              class="text-decoration-none text-dark lh-lg hov-he-red">Listing pages</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="./category.html" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Category Page 1 </a>
+                            </li>
+                            <li> <a href="./category-v2.html" class="text-decoration-none text-dark lh-lg hov-he-red"
+                                style="font-size: 13px;">Category Page 2 </a>
+                            </li>
+                            <li> <a href="./category-v3" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Category Page 3 </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div>
+                          <h6 class="border-bottom text-uppercase "><a href="#"
+                              class="text-decoration-none text-dark hov-he-red">Product pages</a>
+                          </h6>
+                          <ul style="list-style: none; ">
+                            <li> <a href="./product.html" class="text-decoration-none text-dark hov-he-red"
+                                style="font-size: 13px;">Product Page 1 </a>
+                            </li>
+                            <li> <a href="./product-v2.html" class="text-decoration-none text-dark hov-he-red"
+                                style="font-size: 13px;">Product Page 2 </a>
+                            </li>
+                            <li> <a href="./product-v3.html" class="text-decoration-none text-dark hov-he-red"
+                                style="font-size: 13px;">Product Page 3 </a>
+                            </li>
+                            <li> <a href="./product-v4.html" class="text-decoration-none text-dark hov-he-red"
+                                style="font-size: 13px;">Product Page 4 </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div>
+                          <h6 class="border-bottom text-uppercase "><a href="#"
+                              class="text-decoration-none text-dark hov-he-red lh-lg">Shopping pages</a>
+                          </h6>
+                          <ul style="list-style: none; ">
+                            <li> <a href="./cart.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Shopping Cart Page</a>
+                            </li>
+                            <li> <a href="./checkout.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Checkout Page </a>
+                            </li>
+                            <li> <a href="./compare.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Compare Page </a>
+                            </li>
+                            <li> <a href="./wishlist.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Wishlist Page </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div>
+                          <h6 class="border-bottom text-uppercase "><a href="#"
+                              class="text-decoration-none text-dark hov-he-red lh-lg">My Account pages</a>
+                          </h6>
+                          <ul style="list-style: none; ">
+                            <li> <a href="./login.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Login Page </a>
+                            </li>
+                            <li> <a href="./register.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Register Page </a>
+                            </li>
+                            <li> <a href="./my-account.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">My Account </a>
+                            </li>
+                            <li> <a href="./order-history.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Order History</a>
+                            </li>
+                            <li> <a href="./order information.html"
+                                class="text-decoration-none text-dark hov-he-red lh-lg" style="font-size: 13px;">Order
+                                Information</a>
+                            </li>
+                            <li> <a href="./return.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Product Returns </a>
+                            </li>
+                            <li> <a href="./gift-voucher.html" class="text-decoration-none text-dark hov-he-red lh-lg"
+                                style="font-size: 13px;">Gift Voucher </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="navbar-item mx-3 dropdown">
+
+                  <a href="#" class="nav-link dropdown-toggle  text-uppercase bg-hov " role="button"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside">pages</a>
+                  <img src="./images/hot-icon.png" alt="" style="margin-top: -100px; margin-left: 15px;">
+                  <div class="container dropdown-menu" style="min-height: 40vh; min-width: 45vh;">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <div class="mt-4">
+
+                          <ul style="list-style: none;">
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg" href="./faq.html">FAQ</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg"
+                                href="./typography.html">Typography</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg" href="./site-map.html">Site
+                                Map</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg"
+                                href="./contact.html">Contact us</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg"
+                                href="./banner-effect.html">Banner Effect</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mt-4">
+                          <ul style="list-style: none;">
+                            <li> <a class="text-decoration-none text-dark hov-he-red  lh-lg"
+                                href="./about-us.html">About Us 1</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg"
+                                href="./about-us-2.html">About Us 2</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg"
+                                href="./about-us-3.html">About Us 3</a>
+                            </li>
+                            <li> <a class="text-decoration-none text-dark hov-he-red lh-lg"
+                                href="./about-us-4.html">About Us 4</a>
+                            </li>
+
+
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+                <li class="navbar-item mx-3 dropdown">
+                  <a href="#" class="nav-link dropdown-toggle  text-uppercase bg-hov" role="button"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside">categries</a>
+                  <img src="./images/new-icon.png" alt="" style="margin-top: -100px; margin-left: 15px;">
+
+                  <div class="container dropdown-menu " style="min-height: 45vh; min-width: 100vh;">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3">
+                        <div>
+                          <img src="./images/img1.jpg" class="img-fluid mb-3 ms-3 w-75" alt="">
+                          <h6 class="border-bottom text-uppercase  ms-3"><a href="#"
+                              class="text-decoration-none text-dark  lh-lg hov-he-red">Automotive</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Car Alarms
+                                and Security </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Car Audio
+                                & Speakers </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red "
+                                style="font-size: 13px;">Gadgets &
+                                Auto Parts </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">More Car
+                                Accessories </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div>
+                          <img src="./images/img2.jpg" class="img-fluid mb-3 ms-3 w-75" alt="">
+                          <h6 class="border-bottom text-uppercase  ms-3"><a href="#"
+                              class="text-decoration-none text-dark  lh-lg hov-he-red">Electronics</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red "
+                                style="font-size: 13px;">Battereries & Chargers</a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Headphones, Headsets </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Home Audio
+                              </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Mp3
+                                Players & Accessories </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div>
+                          <img src="./images/img3.jpg" class="img-fluid mb-3 ms-3 w-75" alt="">
+                          <h6 class="border-bottom text-uppercase  ms-3"><a href="#"
+                              class="text-decoration-none text-dark  lh-lg hov-he-red">Jewelry & Watches</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Earings</a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Wedding
+                                Rings </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Men
+                                Watches </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Women
+                                Watches </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div>
+                          <img src="./images/img4.jpg" class="img-fluid mb-3 ms-3 w-75" alt="">
+                          <h6 class="border-bottom text-uppercase  ms-3"><a href="#"
+                              class="text-decoration-none text-dark  lh-lg hov-he-red">Bags, Holiday Supplies</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Gift &
+                                Lifestyle Gadgets</a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Gift for
+                                Man </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Gift for
+                                Woman </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark  lh-lg hov-he-red"
+                                style="font-size: 13px;">Lighter &
+                                Cigar Supplies </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="navbar-item mx-3 dropdown ">
+                  <a href="#" class="nav-link dropdown-toggle  text-uppercase bg-hov " role="button"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside">accessories</a>
+
+                  <div class="container dropdown-menu " style="min-height: 45vh; min-width: 110vh;">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                        <div>
+
+                          <h6 class="border-bottom text-uppercase  ms-3 "><a href="#"
+                              class="text-decoration-none text-dark lh-lg hov-drop">Automotive</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Alarms and Security </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Audio & Speakers </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Gadgets & Auto Parts </a>
+                            </li>
+
+                          </ul>
+                          <br>
+                          <h6 class="border-bottom text-uppercase  ms-3 lh-lg "><a href="#"
+                              class="text-decoration-none text-dark lh-lg hov-drop">Automotive</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Alarms and Security </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Audio & Speakers </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Gadgets & Auto Parts </a>
+                            </li>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div>
+
+                          <h6 class="border-bottom text-uppercase  ms-3 "><a href="#"
+                              class="text-decoration-none text-dark lh-lg hov-drop">Automotive</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Alarms and Security </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Audio & Speakers </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Gadgets & Auto Parts </a>
+                            </li>
+
+                          </ul>
+                          <br>
+                          <h6 class="border-bottom text-uppercase  ms-3 lh-lg "><a href="#"
+                              class="text-decoration-none text-dark lh-lg hov-drop">Automotive</a>
+                          </h6>
+
+                          <ul style="list-style: none;">
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Alarms and Security </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Car Audio & Speakers </a>
+                            </li>
+                            <li> <a href="#" class="text-decoration-none text-dark lh-lg hov-drop"
+                                style="font-size: 13px;">Gadgets & Auto Parts </a>
+                            </li>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div>
+
+                          <h6 class="border-bottom text-uppercase  ms-3"><a href="#"
+                              class="text-decoration-none text-dark lh-lg hov-drop">Jewelry
+                              & Watches</a>
+                          </h6>
+
+                          <div class=" " style="min-width: 240px;">
+
+                            <!-- 1 -->
+
+                            <div class="d-flex mt-2 align-items-start">
+                              <div class="">
+                                <img width="100px" height="100px" class="rounded " src="./images/35.jpg" alt=""
+                                  srcset="" />
+                              </div>
+                              <div class=" mt-3">
+
+                                <a href="#" class="text-decoration-none fs-5 hov-he-red"
+                                  style="color:  rgb(102, 102, 102);">Filet
+                                  Mign</a>
+                                <span class="d-block">
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                </span>
+                                <span class="text-danger d-block fw-bold fs-6">$88.00</span>
+
+                              </div>
+
+                            </div>
+                            <!-- 2 -->
+
+                            <div class="d-flex mt-2 align-items-start">
+                              <div class="flex-shrink-0">
+                                <img width="100px" height="100px" class="rounded img-fluid" src="./images/W1.jpg" alt=""
+                                  srcset="" />
+                              </div>
+                              <div class="flex-grow-1 mt-3">
+                                <a href="#" class="text-decoration-none fs-5 hov-he-red"
+                                  style="color:  rgb(102, 102, 102);">Dail
+                                  Lulpa</a>
+                                <span class="d-block">
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                  <i class="bi bi-star" style="color: yellow;"></i>
+                                </span>
+                                <span class="text-danger d-block fw-bold fs-6">$78.00</span>
+                              </div>
+
+                            </div>
+                            <!-- 3 -->
+
+                            <div class="d-flex align-items-start">
+                              <div class="flex-shrink-0">
+                                <img width="100px" height="100px" class="rounded " src="./images/141.jpg" alt=""
+                                  srcset="" />
+                              </div>
+                              <div class="flex-grow-1 mt-3">
+                                <a href="#" class="text-decoration-none fs-5 hov-he-red"
+                                  style="color:   rgb(102, 102, 102);">Canon
+                                  EOS 5D</a>
+                                <span class="d-block">
+                                  <i class="bi bi-star" style="color: yellow;"></i>
+                                  <i class="bi bi-star" style="color: yellow;"></i>
+                                  <i class="bi bi-star" style="color: yellow;"></i>
+                                  <i class="bi bi-star" style="color: yellow;"></i>
+                                  <i class="bi bi-star" style="color: yellow;"></i>
+                                </span>
+                                <span class="text-danger d-block fw-bold fs-6">$60.00</span>
+                                <span class="text-decoration-line-through d-block fw-bold fs-6"
+                                  style="color:rgb(192, 192, 192);">$145.00</span>
+                              </div>
+
+                            </div>
+
+
+                          </div>
+
+
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="navbar-item mx-3">
+                  <a href="#" class="nav-link  text-uppercase bg-hov">blog</a>
+                </li>
+                <li class="navbar-item mx-3">
+                  <a href="#" class="nav-link  text-uppercase bg-hov">buy theme!</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row g-0">
+      <!-- العمود ٤ يظهر فقط من xl وفوق -->
+      <div class="col-xl-4 d-none d-xl-block">
+        <div class="red-col">
+          <form>
+            <div class="input-group ">
+
+              <button class="btn btn-red fs-1" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <i class="bi bi-list-task"></i>
+              </button>
+
+              <!--دروب داون الزر الاحمر  -->
+
+              <ul class="dropdown-menu offcanvasColor">
+                <li class="dropdown-item dropdown">
+                  <a class="dropdown-toggle d-flex justify-content-between align-items-center text-decoration-none"
+                    href="#" role="button" data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">AUTOMOTIVE & MOTOCRYCLE</span>
+                  </a>
+                  <!--  dropdownقائمه الاولى  -->
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <h3 class="dropdown-item fw-bold fs-1 my-4">AUTOMOTIVE</h3>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Car Alarms
+                        and Security</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Car Audio &
+                        Speakers</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Gadgets &
+                        Auto Parts</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">More Car
+                        Accessories</a>
+
+
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">ELECTRONICS</h3>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Angene
+                        mafin</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Egante
+                        mangetes</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Gante
+                        extensg</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Guntes
+                        magesg</a>
+
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">MOBILE & TABLET</h3>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Hanet
+                        magente</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Knage
+                        unget</a>
+
+
+                      <div class="my-3">
+                        <img src="./img-static-megamenu-h.png" alt="" class="w-100">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">ELECTRONIC</h3>
+                </li>
+
+                <li class="dropdown-item dropdown">
+                  <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button"
+                    data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">SPORTS & OUTDOORS</span>
+                  </a>
+                  <!-- dropdown قائمة الثانيه -->
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">MOBILE ACCESSORIES</h3>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Gadgets &
+                        Auto Parts</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Bath &
+                        Body</a>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Bags,
+                        Holiday Supplies</a>
+
+
+
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">FISHING</h3>
+                      <a href="" class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">FPV System &
+                        Parts</a>
+                      <a href=""
+                        class="fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4 d-block">Electronics</a>
+
+
+                      <div class="my-3">
+                        <img src="./menu_bg2.jpg" alt="" class="w-100">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-item dropdown">
+                  <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button"
+                    data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">HEALTH & BEAUTY</span>
+                  </a>
+                  <!-- dropdown قائمه الثالثة -->
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <h3 class="dropdown-item fw-normal text-warning-hover fs-4 mb-5">CAR ALARMS AND SECURITY</h3>
+                      <a href="" class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 d-block">Head
+                        Magente</a>
+                      <hr>
+                      <a href="" class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 d-block">Head
+                        Unget</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5 d-block">Car Alarms
+                        and Security</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5 d-block">HEALTH &
+                        BEAUTY</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5 d-block">HOME
+                        AUDIO</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5 d-block">HEALTH &
+                        BEAUTY</a>
+                      <a href="" class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 d-block">Rengae
+                        manges</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 d-block">Mobiles</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5 d-block">Macs</a>
+                      <hr>
+                      <a href=""
+                        class="fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5 d-block">Punge
+                        nenune</a>
+                      <hr>
+
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">FLASHLIGHTS & LAMPS</h3>
+                </li>
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">CAMERA & PHOTO</h3>
+                </li>
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">SMARTPHONE & TABLETS</h3>
+                </li>
+              </ul>
+              <span class="fs-4 fw-bold pt-3 ps-3">CATEGORİES <i class="bi bi-arrow-up-circle"></i></span>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+
+      <div class="col-12 col-xl-8">
+        <div class="bg-black  h-3rem rounded position-relative w-100">
+
+          <!-- الزر يلي بيفتح القائمة -->
+
+          <button class="btn btn-black fs-3 text-white border-black d-xl-none my-1 mx-2" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="bi bi-list-nested"></i>
+          </button>
+          <div class="w-50 position-absolute" style="top:0.7rem; left:6rem;">
+            <div class="input-group ">
+              <!-- القائمة المنسدلةSelect-->
+              <select class="form-select rounded-start">
+                <option selected>Automotive</option>
+                <option value="1">Desktops</option>
+                <option value="2">Home9</option>
+                <option value="3">Home8</option>
+                <option value="4">Laptops & Notebooks</option>
+                <option value="5">Macs</option>
+                <option value="6">Windows</option>
+                <option value="7">Desktops</option>
+                <option value="8">Home9</option>
+                <option value="9">Home8</option>
+                <option value="10">Laptops & Notebooks</option>
+                <option value="11">Macs</option>
+                <option value="12">Windows</option>
+                <option value="13">Desktops</option>
+                <option value="14">Home9</option>
+                <option value="15">Home8</option>
+                <option value="16">Laptops & Notebooks</option>
+                <option value="17">Macs</option>
+                <option value="18">Windows</option>
+                <option value="19">Desktops</option>
+                <option value="20">Home9</option>
+                <option value="21">Home8</option>
+                <option value="22">Laptops & Notebooks</option>
+                <option value="23">Macs</option>
+                <option value="24">Windows</option>
+                <option value="25">Desktops</option>
+                <option value="26">Home9</option>
+                <option value="27">Home8</option>
+                <option value="28">Laptops & Notebooks</option>
+                <option value="29">Macs</option>
+                <option value="30">Windows</option>
+                <option value="31">Desktops</option>
+                <option value="32">Home9</option>
+                <option value="33">Home8</option>
+                <option value="34">Laptops & Notebooks</option>
+                <option value="35">Macs</option>
+                <option value="36">Windows</option>
+              </select>
+              <!-- حقل البحث -->
+              <input type="text" class="form-control" placeholder="Search">
+
+              <button class="btn btn-light text-danger rounded-end" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+
+              <div class="ms-4 d-none d-md-block ms-5 mt-2">
+                <a href="" class="text-decoration-none fs-5 fw-bolder">
+                  <i class="bi bi-person-fill text-red-hover"><span>LOGIN</span></i>
+                </a>
+              </div>
+
+              <div class="d-flex text-black ms-5">
+                <div class="vr" style="width:2px; height:40px;"></div>
+              </div>
+
+              <!-- my cart -->
+
+
+
+              <div class="btn-group position-absolute" id="myBtnGroup" style="top:0; left:20;">
+
+
+                <button type="button" class="btn text-red-hover fw-bold btn-lg dropdown-toggle"
+                  data-bs-toggle="dropdown" style="margin-left: 150px;">
+                  <i class="bi bi-basket"></i>
+                  <span class="d-none d-md-inline"> MY CART</span>
+                </button>
+                <ul class="dropdown-menu border-top border-danger border-0">
+                  <form class="py-3 px-4">
+                    <table class="table">
+                      <tr>
+                        <td>
+                          <img src="./images/35.jpg" alt="" class="img-fluid">
+                        </td>
+                        <td>FİLT MİNG</td>
+                        <td>X1</td>
+                        <td>$1,202.00</td>
+                        <td>
+                          <i class="bi bi-x-square-fill"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="./images/141.jpg" alt="" class="img-fluid">
+                        </td>
+                        <td>CANON EOS 5D</td>
+                        <td>X1</td>
+                        <td>$60.00</td>
+                        <td>
+                          <i class="bi bi-x-square-fill"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> SUB-TOTAR</td>
+                        <td> . </td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td> $1,060.00</td>
+                      </tr>
+                      <tr>
+                        <td> ECOTAX(-2.00) </td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>$2.00</td>
+                      </tr>
+                      <tr>
+                        <td> VAT(20%)</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>$200.00</td>
+                      </tr>
+                      <tr>
+                        <td>TOTAL</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>$1,262.00</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <button class="btn btn-secondary px-3">
+                            <i class="bi bi-cart-fill">
+                              <span>VİEW CART</span> </i>
+                          </button>
+                        </td>
+                        <td> <button class="btn btn-secondary px-3">
+                            <i class="bi bi-arrow-return-left">
+                              <span>CHECKOUT</span> </i></button>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- القائمة الجانبية -->
+          <div class="offcanvas offcanvas-start offcanvasColor" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header fw-bold" style="position: relative;
+                padding-left:20rem;">
+
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <hr class="hr">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#"
+                    role="button" data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">AUTOMOTIVE & MOTOCRYCLE</span>
+                  </a>
+                  <!-- قائمة الdropdown الاولى -->
+                  <ul class="dropdown-menu w-100">
+                    <!-- autmotive قائمه ال -->
+                    <li>
+                      <h3 class="dropdown-item fw-bold fs-1 my-4">AUTOMOTIVE</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Car Alarms and
+                        Security</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Car Audio &
+                        Speakers</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gadgets & Auto
+                        Parts</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">More Car
+                        Accessories</a>
+                      <!-- COMPUTER قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">COMPUTER</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Camping &
+                        Hiking</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Cusen mariot</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Engite nanet</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">More Car
+                        Accessories</a>
+                      <!-- ELECTRONICS قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">ELECTRONICS</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Angene mafin</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Egante
+                        mangetes</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gante extensg</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Guntes magesg</a>
+                      <!-- MOBILE & TABLET قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">MOBILE & TABLET</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Hanet magente</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Knage unget</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Latenge mange</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Punge nenune</a>
+                      <div class="my-3">
+                        <img src="./img-static-megamenu-h.png" alt="" class="w-100">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <hr>
+                <!-- ///////ELECTRONIC/////////// -->
+
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">ELECTRONIC</h3>
+                </li>
+                <hr>
+
+                <!-- ///////SPORTS & OUTDOORS/////////// -->
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#"
+                    role="button" data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">SPORTS & OUTDOORS</span>
+                  </a>
+                  <!-- قائمة الdropdown الثانيه -->
+                  <ul class="dropdown-menu w-100">
+                    <!-- MOBILE ACCESSORIES قائمه ال -->
+                    <li>
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">MOBILE ACCESSORIES</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gadgets & Auto
+                        Parts</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Bath & Body</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Bags, Holiday
+                        Supplies</a>
+
+                      <!-- BATTERERIES & CHARGERS قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">BATTERERIES & CHARGERS</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Outdoor &
+                        Traveling</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Flashlights &
+                        Lamps</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Fragrances</a>
+
+                      <!-- FISHING قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">FISHING</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">FPV System &
+                        Parts</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Electronics</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Earings</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">More Car
+                        Accessories</a>
+
+                      <div class="my-3">
+                        <img src="./menu_bg2.jpg" alt="" class="w-100">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <hr>
+
+                <!-- ///////HEALTH & BEAUTY/////////// -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#"
+                    role="button" data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">HEALTH & BEAUTY</span>
+                  </a>
+                  <!-- قائمة الdropdown الثالثة -->
+                  <ul class="dropdown-menu w-100">
+                    <!-- CAR ALARMS AND SECURITY قائمه ال -->
+                    <li>
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">CAR ALARMS AND SECURITY</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Car Audio &
+                        Speakers</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gadgets & Auto
+                        Parts</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gadgets & Auto
+                        Parts</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Headphones,
+                        Headsets</a>
+
+                      <!-- HEALTH & BEAUTY قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">HEALTH & BEAUTY</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Home Audio</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Helicopters &
+                        Parts</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Outdoor &
+                        Traveling</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Toys & Hobbies</a>
+
+                      <!-- ELECTRONICS قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">ELECTRONICS</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Earings</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Salon & Spa
+                        Equipment</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Shaving & Hair
+                        Removal</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">SPORTS &
+                        OUTDOORS</a>
+
+                      <!-- SPORTS & OUTDOORS قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">SPORTS & OUTDOORS</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Flashlights &
+                        Lamps</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Fragrances</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Fishing</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">FPV System &
+                        Parts</a>
+
+                      <!-- MORE CAR ACCESSORIES قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">MORE CAR ACCESSORIES</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Lighter & Cigar
+                        Supplies</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Mp3 Players &
+                        Accessories</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Men Watches</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Mobile
+                        Accessories</a>
+                      <!-- GADGETS & AUTO PARTS قائمه ال-->
+                      <h3 class="dropdown-item fw-bold fs-3 my-4">GADGETS & AUTO PARTS</h3>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gift & Lifestyle
+                        Gadgets</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gift for Man</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gift for Woman</a>
+                      <!-- // --><br><br>
+                      <a href="" class="  fs-5 fw-bold text-red-hover ms-3 text-decoration-none my-4">Gift for Woman</a>
+                    </li>
+                  </ul>
+                </li>
+                <hr>
+
+                <!-- ///////SMARTPHONE & TABLETS/////////// -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#"
+                    role="button" data-bs-toggle="dropdown">
+                    <span class="fw-bolder text-light">HEALTH & BEAUTY</span>
+                  </a>
+                  <!-- قائمة الdropdown الرابعه -->
+                  <ul class="dropdown-menu w-100">
+                    <!-- CAR ALARMS AND SECURITY قائمه ال -->
+                    <li>
+                      <h3 class="dropdown-item fw-normal text-warning-hover fs-4 mb-5">CAR ALARMS AND SECURITY</h3>
+
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5">Head
+                        Magente</a>
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5">Head
+                        Unget</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">Car
+                        Alarms and Security</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">HEALTH
+                        & BEAUTY</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">HOME
+                        AUDIO</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">HEALTH
+                        & BEAUTY</a>
+
+                      <!-- /// --><br><br><br>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5">Rengae
+                        manges</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5">Mobiles</a>
+
+                      <hr>
+                      <a href=""
+                        class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">Macs</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">Punge
+                        nenune</a>
+
+                      <hr>
+                      <a href=""
+                        class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">HELICOPTERS &
+                        PARTS</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">CAR
+                        AUDIO & SPEAKERS</a>
+
+                      <!-- /// --><br><br><br>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">Qunge
+                        genga</a>
+
+                      <hr>
+                      <a href=""
+                        class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">Accessories</a>
+
+                      <hr>
+                      <a href="" class="  fs-4 fw-normal text-warning-hover ms-3 text-decoration-none my-5 py-5">Laptops
+                        & Notebooks</a>
+
+                    </li>
+                  </ul>
+                </li>
+                <hr>
+                <!-- ///////FLASHLIGHTS & LAMPS/////////// -->
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">FLASHLIGHTS & LAMPS</h3>
+                </li>
+                <hr>
+                <!-- ///////CAMERA & PHOTO/////////// -->
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">CAMERA & PHOTO</h3>
+                </li>
+                <hr>
+                <!-- ///////SMARTPHONE & TABLETS/////////// -->
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">SMARTPHONE & TABLETS</h3>
+                </li>
+                <hr>
+                <!-- ///////OUTDOOR & TRAVELING SUPPLIES/////////// -->
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">OUTDOOR & TRAVELING SUPPLIES</h3>
+                </li>
+                <hr>
+                <!-- ///////TOYS & HOBBIES/////////// -->
+                <li>
+                  <h3 class="fw-bold fs-3 my-4">TOYS & HOBBIES</h3>
+                </li>
+                <hr>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- end header -->
+
+  <div class="container">
+    <nav style="--bs-breadcrumb-divider: '&gt;'">
+      <ol class="breadcrumb px-4 py-3">
+        <li class="breadcrumb-item">
+          <i class="fa-solid fa-house-chimney"></i>
+        </li>
+        <li class="breadcrumb-item">Account</li>
+        <li class="breadcrumb-item active text-danger">About Us 4</li>
+      </ol>
+      <hr>
+    </nav>
+    <div class="row mt-5 justify-content-center ">
+      <div class="col-md-6">
+        <h5>About Us</h5>
+
+        <br /><img class="img-fluid" src="./images/about-us-demo3.jpg" alt="">
+      </div>
+      <div class="col-md-6">
+
+
+        <h5>Faqs</h5>
+
+        <br />
+
+
+        <div class="faq-container">
+
+
+          <div class="faq mt-2">
+            <div class="faq-question"><span class=" bg-secondary text-white p-2">?</span> Etharums ser
+              quidem rerum?</div>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et commodi similique quae
+              recusandae voluptas eveniet asperiores, ullam inventore, aliquam nobis iusto voluptates
+              libero atque tempora quas neque cum odio? Nisi quod vero placeat magnam aperiam a, labore
+              incidunt perferendis porro illo voluptatibus doloribus autem dicta eius voluptate beatae
+              accusamus consectetur. </div>
+          </div>
+
+          <div class="faq mt-2">
+            <div class="faq-question"><span class=" bg-secondary text-white p-2">?</span> Lorem ipsum dolor
+              sit amet?</div>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores esse aut consectetur!
+              Fuga perferendis quos optio! Aut voluptatibus sequi corrupti asperiores, nisi, saepe
+              dignissimos quidem fugiat velit laborum aperiam ab rerum explicabo rem molestias deserunt,
+              delectus earum mollitia sunt tempore soluta corporis? Minus velit dolorum ducimus nostrum
+              temporibus consequuntur quo? </div>
+          </div>
+
+          <div class="faq mt-2">
+            <div class="faq-question"><span class=" bg-secondary text-white p-2">?</span> Nam vitae felis
+              pretium, euismod ipsum nec?</div>
+            <div class="faq-answer">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi provident assumenda deleniti
+              numquam neque voluptates repellendus consectetur dolor, accusantium perferendis, aliquam
+              sint, sunt exercitationem corrupti. Doloremque ipsa maiores rerum fugiat et, culpa repellat
+              consequatur ab quia odit nemo fuga saepe fugit! Illo odio, maxime dolorum itaque quam
+              corporis iste enim? </div>
+          </div>
+
+          <div class="faq mt-2">
+            <div class="faq-question"><span class=" bg-secondary text-white p-2">?</span> Quisque posuere
+              dolor in malesuada?</div>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam nesciunt
+              molestiae sapiente neque aut. Facilis veritatis culpa hic eaque, dolore ipsum amet illo quae
+              quisquam consequuntur sed? Dolorem enim praesentium beatae optio reprehenderit soluta
+              repudiandae eum aliquam, totam est modi suscipit tempora corporis earum doloribus odit
+              error, laudantium facilis! </div>
+          </div>
+          <div class="faq mt-2">
+            <div class="faq-question"><span class=" bg-secondary text-white p-2">?</span> Etharums ser
+              quidem rerum?</div>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus quia maxime id, ducimus
+              eligendi in saepe similique minima sint, laboriosam dolorum ratione, quas voluptatibus
+              pariatur eos! Et est odio harum doloremque, modi voluptates dignissimos distinctio cum,
+              fugit sunt nostrum quidem similique ex? Natus minus delectus deserunt tempora soluta
+              laudantium? </div>
+          </div>
+          <div class="faq mt-2">
+            <div class="faq-question"><span class=" bg-secondary text-white p-2">?</span> Etharums ser
+              quidem rerum?</div>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum animi explicabo harum
+              delectus excepturi sed quod, libero quisquam numquam voluptatibus ad. Eum necessitatibus
+              sunt, voluptatum et iusto deleniti temporibus rem voluptatem iste quam maxime corrupti sit
+              deserunt excepturi minus atque repudiandae. Incidunt placeat fugit minus, fuga dicta
+              voluptatum officiis inventore. </div>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+    <div class="row mt-5  ">
+      <div class="col-md-5 ">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+          massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+          penatibus et magnis dis parturient montes,</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer bages-->
+  <div class="container-fluid mt-5">
+    <div class="newsletter">
+      <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center"
+        style="background-color: rgb(34, 34, 34);;">
+        <div class="ms-5 " style="background-color:rgb(102, 102, 102);height: 64px; ">
+          <ul class="list-inline d-flex mt-2">
+
+            <li class="ps-4"><a href="#"><i class="bi bi-facebook " style="color: #ffffff;"></i></a></li>
+            <li class="ps-4"><a href="#"><i class="bi bi-twitter" style="color: #ffffff;"></i></a></li>
+            <li class="ps-4"><a href="#"><i class="bi bi-rss" style="color: #ffffff;"></i></a></li>
+            <li class="ps-4"><a href="#"><i class="bi bi-google" style="color: #ffffff;"></i></a></li>
+            <li class="ps-4 pe-4"><a href="#"><i class="bi bi-pinterest" style="color: #ffffff;"></i></a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="mb-2 mb-md-0 d-flex">
+          <img src="./images/email-icon.png" alt="" style="width: 50px; height: 50px;">
+          <div>
+            <strong class="text-white">SIGN UP FOR OUR NEWSLETTER</strong><br>
+            <p class="text-white"> Duis at ante non massa consectetur euismod in non tellus</p>
+
+          </div>
+
+        </div>
+        <form class="d-flex form-gorup">
+          <input type="email" class="form-control me-2" placeholder="Your email address...">
+          <button type="submit" class="btn" style="background-color: rgb(218, 39, 35);">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo"><img src="./images/theme_logo.png" alt=""></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+              simply
+              dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="col-md-3 border-start">
+            <h5>MY ACCOUNT</h5>
+            <ul>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> Brands</a></li>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> Gift
+                  Certificates</a></li>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> Affiliates</a>
+              </li>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> Specials</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 border-start">
+            <h5>INFORMATION</h5>
+            <ul>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> About Us</a></li>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> FAQ</a></li>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> Pricing
+                  Tables</a></li>
+              <li class="hov-lir"><i class="bi bi-chevron-double-right"></i><a href="#"> Terms And
+                  Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 border-start">
+            <h5>ABOUT US</h5>
+            <div class="about">
+              <i class="bi bi-house-door-fill" style="color: rgb(218, 39, 35);"></i>
+              <span>My Company, 42 avenue des Champs</span>
+              <br>
+              <i class="bi bi-envelope-fill" style="color: rgb(218, 39, 35);"></i>
+              <span style="position: relative;">Email: sales@yourcompany.com</span>
+              <br>
+              <i class="bi bi-telephone-fill" style="color: rgb(218, 39, 35);"></i>
+              <span>Phone: 01 23456789</span>
+              <br>
+              <div class="mt-3">
+                <a href="#"><img src="./images/payment-1.png" alt="Payments" style="max-width: 180px;"></a>
+                <a href="#"><img src="./images/payment-2.png" alt="Payments" style="max-width: 180px;"></a>
+                <a href="#"><img src="./images/payment-3.png" alt="Payments" style="max-width: 180px;"></a>
+                <a href="#"><img src="./images/payment-4.png" alt="Payments" style="max-width: 180px;"></a>
+                <a href="#"><img src="./images/payment-5.png" alt="Payments" style="max-width: 180px;"></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Maxshop © 2018 - 2019. MAGENTECH Store. All Rights Reserved.
+    </div>
+  </div>
+  <!-- end footer bages -->
+
+
+
+  <script>
+    const faqs = document.querySelectorAll('.faq');
+
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+        faqs.forEach(other => {
+          if (other !== faq) {
+            other.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
