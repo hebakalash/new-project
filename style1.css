@@ -1,0 +1,116 @@
+
+   a:hover {
+        color: red !important;
+      }
+      .h-10 {
+        height: 5rem;
+      }
+.b:hover{
+
+   border-color: #d71b00 !important; 
+}
+.zoom-container{
+   width: 200px;
+    height: 200px;
+border-radius: 10px;
+overflow: hidden;
+cursor: pointer;
+}
+.zoom-container img{
+transition:transform 0.5s ease ;
+}
+.zoom-container:hover img{
+
+transform: scale(1.06);
+
+}
+  .hp:hover {
+        background-color: rgba(0, 0, 0, 0.3) !important;
+      }
+.e:hover{
+
+border: 1px,solid, #d71b00 !important;
+
+}
+
+/* الالوان */
+
+
+body {
+font-family: Arial, sans-serif;
+padding: 40px;
+background: #f9f9f9;
+}
+
+.color-options {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.color-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+}
+
+.color-checkbox {
+width: 40px;
+height: 40px;
+border-radius: 6px;
+cursor: pointer;
+position: relative;
+border: 2px solid #ccc;
+transition: 0.2s;
+}
+
+.color-checkbox input[type="checkbox"] {
+display: none;
+}
+
+.color-checkbox::after {
+content: "";
+position: absolute;
+top: 5px;
+left: 10px;
+font-size: 20px;
+color: white;
+display: none;
+}
+
+.color-checkbox input[type="checkbox"]:checked + .color-display::after {
+display: block;
+}
+
+/* ألوان مختلفة */
+.red .color-display { background: red; }
+.blue .color-display { background: blue; }
+.green .color-display { background: green; }
+.yellow .color-display { background: gold; }
+.gray .color-display { background: rgb(60, 59, 59); }
+.orange .color-display { background: rgb(199, 95, 16); }
+
+.color-display {
+width: 20px;
+height: 20px;
+border-radius: 6px;
+position: relative;
+box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.color-display::after {
+content: "✓";
+position: absolute;
+top: 5px;
+left: 11px;
+color: white;
+font-size: 20px;
+display: none;
+}
+
+input[type="checkbox"]:checked + .color-display::after {
+display: block;
+}
+
+
